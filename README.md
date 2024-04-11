@@ -6,194 +6,128 @@
     DOCUMENTAÇÃO E RELATÓRIOS
 </div>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Sumário</summary>
   <ol>
     <li>
-      <a href="#about-the-project">Ideação</a>
-      <ul>
-        <li><a href="#built-with">Possíveis tecnologias</a></li>
-      </ul>
+      <a href="#ideação">Ideação</a>
+      <li><a href="#possíveis-tecnologias">Possíveis tecnologias</a></li>
     </li>
     <li>
-      <a href="#getting-started">Stakeholders</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
+      <a href="#stakeholders">Stakeholders</a>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#propostas-de-valor">Propostas de valor</a></li>
+    <li><a href="#roadmap-inicial">Roadmap inicial</a></li>
+    <li><a href="#matriz-de-feedback">Matriz de Feedback</a></li>
+    <li><a href="#visão-do-produto">Visão do produto</a></li>
+    <li><a href="#protótipo">Protótipo</a></li>
   </ol>
 </details>
 
-
-
 ## Ideação
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+A ideia do projeto parte da seguinte dor encontrada por Guilherme, ao procurar novas marcas de roupa foi encontrado as seguintes barreiras:
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+<ul>
+ <li>Procurar novas marcas boas pode ser cansativo  </li>
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+ <li>Gostaria de saber o que está em tendência de moda no mercado  </li>
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+ <li>Pouca facilidade na hora de comparar preços de marcas  </li>
+</ul>
 
-Use the `BLANK_README.md` to get started.
+A partir desses problemas iniciais foi pensando na ideia de desenvolver um site que englobe tudo que pode ser útil para o mundo da moda.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
+### Possíveis tecnologias
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+- [![Next][Next.js]][Next-url]
+- [![React][React.js]][React-url]
+- [![Vue][Vue.js]][Vue-url]
+- [![Angular][Angular.io]][Angular-url]
+- [![Svelte][Svelte.dev]][Svelte-url]
+- [![Laravel][Laravel.com]][Laravel-url]
+- [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+- [![JQuery][JQuery.com]][JQuery-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Stakeholders
 
+Mentor - Eduardo Mangeli
+Mentor - Rafael Cruz
+Mentor - Alexandre Rangel
+Desenvolvedor - Guilherme Félix
 
+## Propostas de valor
 
-<!-- GETTING STARTED -->
-## Getting Started
+Algumas das propostas de valor apresentadas são:
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+</ul>
+<li>Facilidade de encontrar roupas de diferentes marcas em um só site </li>
 
-### Prerequisites
+<li>Insights sobre o mundo da moda </li>
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+<li>Visualizar tendências </li>
+</ul>
+<br>
+Segue o link para visualização completa do modelo de Propostas de Valor (VPC) desenvolvido:
 
-### Installation
+<a href="https://miro.com/app/board/uXjVNk9OfuE=/">Propostas de valor</a>
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+## Roadmap inicial
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+- [x] Fazer protótipo
+- [x] Fazer documentação
+- [ ] Desenvolver home page
+- [ ] Fazer responsividade para telas
+- [ ] Criar banco de dados
+  - [ ] Fazer conexão com o Firebase DB
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Matriz de Feedback
 
+Com o desenvolvimento de uma Matriz de Feedback, foi possível estruturar a análise e a avaliação do desempenho.
 
+Para entendermos melhor o que funciona e o que pode ser melhorado, questões que podem ser oportunidades e novas ideias que podem proporcionar desafios.
 
-<!-- USAGE EXAMPLES -->
-## Usage
+## Visão do produto
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Para termos certeza de que o produto está de acordo com o que vai ser desenvolvido, foi elaborado uma visão de produto com base nas 3 perguntas:
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+- <strong>O produto vai atender as necessidades de quem? </strong>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+R: <em>Amantes de moda.</em>
 
+- <strong>Qual o problema pretende solucionar?</strong>
 
+R: <em>Dificuldade de encontrar novos produtos, tendências de moda e informações.</em>
 
-<!-- ROADMAP -->
-## Roadmap
+- <strong>Qual é o objetivo do produto?</strong>
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+R: <em>Centralizar marcas e notícias em um site/app, visando melhorar a busca, conhecimento e compra.</em>
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+Segue o link para visualização completa da Matriz de Feedback e Visão do produto:
+<a href="https://miro.com/app/board/uXjVKXlO8ig=/">Matriz de Feedback e Visão do produto</a>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Protótipo
 
+Durante o processo de ideação, foi desenvolvido um protótipo básico para entendermos os seguintes tópicos:
 
+<ul>
+<li>Qual será a escolha de design e layout do site </li>
 
-<!-- CONTRIBUTING -->
-## Contributing
+<li>Como será a usabilidade </li>
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+<li>Quais conteúdos do site possuem maior qualidade e relevância</li>
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+</ul>
 
 
+Segue o link para visualização do protótipo:
+<a href="https://shorturl.at/rPVX0">Protótipo</a>
 
-<!-- LICENSE -->
-## License
+<p align="right">(<a href="#readme-top">Voltar ao início</a>)</p>
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
@@ -222,4 +156,4 @@ Use this space to list resources you find helpful and would like to give credit 
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[JQuery-url]: https://jquery.com
