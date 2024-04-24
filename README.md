@@ -106,6 +106,7 @@ R: <em>Dificuldade de encontrar novos produtos, tendências de moda e informaç�
 R: <em>Centralizar marcas e notícias em um site/app, visando melhorar a busca, conhecimento e compra.</em>
 
 Segue o link para visualização completa da Matriz de Feedback e Visão do produto:
+
 <a href="https://miro.com/app/board/uXjVKXlO8ig=/">Matriz de Feedback e Visão do produto</a>
 
 ## Lista de requisitos
