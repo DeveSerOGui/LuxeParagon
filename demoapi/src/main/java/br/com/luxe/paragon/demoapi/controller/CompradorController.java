@@ -32,55 +32,77 @@ class CompradorController {
         }
     }
 
-        @PostMapping
-        public ResponseEntity<Comprador> create(@RequestBody Comprador item) {
-            try {
-                Compradores.add(item);
-                return new ResponseEntity<>(item, HttpStatus.CREATED);
-            } catch (Exception e) {
-                return new ResponseEntity<>(null, HttpStatus.EXPECTATION_FAILED);
+    @PostMapping
+    public ResponseEntity<Comprador> create(@RequestBody Comprador item) {
+        try {
+            Compradores.add(item);
+            return new ResponseEntity<>(item, HttpStatus.CREATED);
+        } catch (Exception e) {
+            return new ResponseEntity<>(null, HttpStatus.EXPECTATION_FAILED);
+        }
+    }
+
+    @GetMapping("{id}")
+    public ResponseEntity<Comprador> getById(@PathVariable("id") Integer id) {
+        Comprador result = null;
+
+        for (Comprador item : Compradores) {
+            if (item.getId() == id) {
+                result = item;
+                break;
             }
         }
 
-            @GetMapping("{id}")
-            public ResponseEntity<Comprador> getById(@PathVariable("id") Integer id) {
-                Comprador result = null;
+        if (result != null) {
+            return new ResponseEntity<>(result, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
 
-                        for(Comprador item : Compradores){
-                            if (item.getId()==id){
-                                result = item;
-                                break;
-                            }
-                        }
-        
-                if (result != null) {
-                    return new ResponseEntity<>(result, HttpStatus.OK);
-                } else {
-                    return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    @PutMapping("{id}")
+    public ResponseEntity<Comprador> update(@PathVariable("id") Integer id, @RequestBody Comprador CompradorNovosDados) {
+
+        Comprador compradorAtualizar = null;
+
+        for (Comprador item : Compradores) {
+            if (item.getId() == id) {
+                compradorAtualizar = item;
+                break;
+            }
+        }
+
+        if (compradorAtualizar == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        compradorAtualizar.setNome(CompradorNovosDados.getNome());
+        compradorAtualizar.setCpf(CompradorNovosDados.getCpf());
+
+        return new ResponseEntity<>(compradorAtualizar, HttpStatus.OK);
+    }
+
+    @DeleteMapping("{id}")
+    public ResponseEntity<HttpStatus> delete(@PathVariable("id") Integer id) {
+        try {
+            Comprador compradorExcluir = null;
+
+            for (Comprador item : Compradores) {
+                if (item.getId() == id) {
+                    compradorExcluir = item;
+                    break;
                 }
             }
 
+            if (compradorExcluir == null){
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            }
 
-                @PutMapping("{id}")
-                public ResponseEntity<Comprador> update(@PathVariable("id") Integer id, @RequestBody Comprador CompradorNovosDados) {
+            Compradores.remove(compradorExcluir);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.EXPECTATION_FAILED);
+        }
+    }
 
-                    Comprador compradorAtualizar = null;
-                    
-                    for(Comprador item : Compradores){
-                        if (item.getId()==id){
-                            compradorAtualizar = item;
-                            break;
-                        }
-                    }
-
-                    if (compradorAtualizar == null){
-                        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-                    }
-
-                    compradorAtualizar.setNome(compradorAtualizar.getNome());
-                    compradorAtualizar.setCpf(compradorAtualizar.getCpf());
-
-                    return new ResponseEntity<Comprador>(compradorAtualizar, HttpStatus.OK);
-                }
-            
 }
