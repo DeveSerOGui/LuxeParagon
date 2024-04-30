@@ -78,6 +78,7 @@ class CompradorController {
 
         compradorAtualizar.setNome(CompradorNovosDados.getNome());
         compradorAtualizar.setCpf(CompradorNovosDados.getCpf());
+        compradorAtualizar.setEmail(CompradorNovosDados.getEmail());
 
         return new ResponseEntity<>(compradorAtualizar, HttpStatus.OK);
     }
