@@ -115,17 +115,21 @@ Segue o link para visualização completa da Matriz de Feedback e Visão do prod
 
 <ul>
 
-<li>O usuário deve conseguir se registrar</li>
-<li>Deverá ter login com redes socias</li>
+<li> <strong>Cadastro de Usuário:</strong> Permitir que os usuários se registrem no site, criando contas.</li>
+<li> <strong>Login com redes socias: </strong> O usuário deve poder se registrar atráves do Facebook ou Google.</li>
+<li> <strong>Exibição de Tendências: </strong> Mostrar as tendências de moda atuais, incluindo roupas, acessórios e estilos populares.</li>
+<li> <strong> Perfil de Marca </strong> Criar perfis detalhados para cada marca, incluindo informações sobre sua história, valores e produtos.</li>
+<li> <strong> Compra Online </strong> Integrar um sistema de compras online para que os usuários possam adquirir produtos diretamente pelo site.</li>
 
 </ul>
 
 <strong>Requisitos não funcionais</strong>
 
 <ul>
-<li>O frontend deve ser feito com Python ou Angular</li>
-<li>O banco de dados será feito com Firebase</li>
-<li>O site ficará no ar 24/7</li>
+<li> <strong> Desing: </strong>O desing será desenvolvido com Angular.</li>
+<li><strong> Banco de dados: </strong> O banco de dados deverá ser feito com Firebase.</li>
+<li><strong> Disponibilidade: </strong> O site deve estar acessível 100% do tempo, minimizando períodos de inatividade.</li>
+<li><strong> Responsividade: </strong> O layout do site deve se adaptar a diferentes dispositivos, como desktops, tablets e smartphones.</li>
 </ul>
 
 ## Protótipo
