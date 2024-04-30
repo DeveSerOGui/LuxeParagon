@@ -18,7 +18,8 @@
       <a href="#stakeholders">Stakeholders</a>
     </li>
     <li><a href="#propostas-de-valor">Propostas de valor</a></li>
-    <li><a href="#roadmap-inicial">Roadmap inicial</a></li>
+    <li><a href="#roadmap-inicial-atualizado-2904">Roadmap inicial</a></li>
+    <li><a href="#status-do-projeto-atualizado-2904">Status do projeto</a></li>
     <li><a href="#matriz-de-feedback">Matriz de Feedback</a></li>
     <li><a href="#visão-do-produto">Visão do produto</a></li>
     <li><a href="#lista-de-requisitos">Lista de requisitos</a></li>
@@ -46,8 +47,9 @@ Essas são algumas das tecnologias que possuem chance de serem utilizadas no pro
 
 - ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34)
 - ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
--	![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+- ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 - ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+- ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 - ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 ## Stakeholders
@@ -75,13 +77,17 @@ Segue o link para visualização completa do modelo de Propostas de Valor (VPC) 
 
 <a href="https://miro.com/app/board/uXjVNk9OfuE=/">Propostas de valor</a>
 
-## Roadmap inicial
+## Roadmap inicial (Atualizado 29/04)
 
 - [x] Fazer protótipo
 - [x] Fazer documentação
 - [ ] Desenvolver API
 - [ ] Criar banco de dados
   - [ ] Fazer conexão com o Firebase DB
+
+## Status do projeto (Atualizado 29/04)
+
+No momento está sendo desenvolvida a API, para intergrar com o banco de dados que será criado posteriormente.
 
 ## Matriz de Feedback
 
@@ -108,6 +114,7 @@ R: <em>Centralizar marcas e notícias em um site/app, visando melhorar a busca, 
 Segue o link para visualização completa da Matriz de Feedback e Visão do produto:
 
 <a href="https://miro.com/app/board/uXjVKXlO8ig=/">Matriz de Feedback e Visão do produto</a>
+
 
 ## Lista de requisitos
 
