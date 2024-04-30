@@ -118,8 +118,8 @@ Segue o link para visualização completa da Matriz de Feedback e Visão do prod
 <li> <strong>Cadastro de Usuário:</strong> Permitir que os usuários se registrem no site, criando contas.</li>
 <li> <strong>Login com redes socias: </strong> O usuário deve poder se registrar atráves do Facebook ou Google.</li>
 <li> <strong>Exibição de Tendências: </strong> Mostrar as tendências de moda atuais, incluindo roupas, acessórios e estilos populares.</li>
-<li> <strong> Perfil de Marca </strong> Criar perfis detalhados para cada marca, incluindo informações sobre sua história, valores e produtos.</li>
-<li> <strong> Compra Online </strong> Integrar um sistema de compras online para que os usuários possam adquirir produtos diretamente pelo site.</li>
+<li> <strong> Perfil de Marca: </strong> Criar perfis detalhados para cada marca, incluindo informações sobre sua história, valores e produtos.</li>
+<li> <strong> Compra Online: </strong> Integrar um sistema de compras online para que os usuários possam adquirir produtos diretamente pelo site.</li>
 
 </ul>
 
