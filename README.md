@@ -20,6 +20,7 @@
     <li><a href="#propostas-de-valor">Propostas de valor</a></li>
     <li><a href="#calendar-roadmap-inicial-atualizado-2904">Roadmap inicial</a></li>
     <li><a href="#round_pushpin-status-do-projeto-atualizado-2904">Status do projeto</a></li>
+    <li><a href="#insights-podem-ser-utilizados-ou-não">Insights</a></li>
     <li><a href="#matriz-de-feedback">Matriz de Feedback</a></li>
     <li><a href="#visão-do-produto">Visão do produto</a></li>
     <li><a href="#lista-de-requisitos">Lista de requisitos</a></li>
@@ -88,6 +89,12 @@ Segue o link para visualização completa do modelo de Propostas de Valor (VPC) 
 ## :round_pushpin: Status do projeto (Atualizado 29/04)
 
 No momento está sendo desenvolvida a API, para intergrar com o banco de dados que será criado posteriormente.
+
+## Insights (Podem ser utilizados ou não)
+<ul>
+<li> Utilizar HashCode para criptografar senhas.</li>
+</ul>
+
 
 ## Matriz de Feedback
 
