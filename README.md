@@ -79,8 +79,7 @@ Segue o link para visualização completa do modelo de Propostas de Valor (VPC) 
 
 - [x] Fazer protótipo
 - [x] Fazer documentação
-- [ ] Desenvolver home page
-- [ ] Fazer responsividade para telas
+- [ ] Desenvolver API
 - [ ] Criar banco de dados
   - [ ] Fazer conexão com o Firebase DB
 
@@ -128,6 +127,7 @@ Segue o link para visualização completa da Matriz de Feedback e Visão do prod
 
 <ul>
 <li> <strong> Desing: </strong>O desing será desenvolvido com Angular.</li>
+<li><strong> Integração com banco: </strong> A conexão do site com o banco de dados deverá ser feito em Java utilizando Springboot como API.</li>
 <li><strong> Banco de dados: </strong> O banco de dados deverá ser feito com Firebase.</li>
 <li><strong> Disponibilidade: </strong> O site deve estar acessível 100% do tempo, minimizando períodos de inatividade.</li>
 <li><strong> Responsividade: </strong> O layout do site deve se adaptar a diferentes dispositivos, como desktops, tablets e smartphones.</li>
