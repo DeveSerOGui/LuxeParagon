@@ -11,15 +11,15 @@
   <summary>Sumário</summary>
   <ol>
     <li>
-      <a href="#ideação">Ideação</a>
+      <a href="#bulb-ideação">Ideação</a>
       <li><a href="#possíveis-tecnologias">Possíveis tecnologias</a></li>
     </li>
     <li>
-      <a href="#stakeholders">Stakeholders</a>
+      <a href="#handshake-stakeholders">Stakeholders</a>
     </li>
     <li><a href="#propostas-de-valor">Propostas de valor</a></li>
-    <li><a href="#roadmap-inicial-atualizado-2904">Roadmap inicial</a></li>
-    <li><a href="#status-do-projeto-atualizado-2904">Status do projeto</a></li>
+    <li><a href="#calendar-roadmap-inicial-atualizado-2904">Roadmap inicial</a></li>
+    <li><a href="#round_pushpin-status-do-projeto-atualizado-2904">Status do projeto</a></li>
     <li><a href="#matriz-de-feedback">Matriz de Feedback</a></li>
     <li><a href="#visão-do-produto">Visão do produto</a></li>
     <li><a href="#lista-de-requisitos">Lista de requisitos</a></li>
@@ -27,7 +27,7 @@
   </ol>
 </details>
 
-## Ideação
+## :bulb: Ideação
 
 A ideia do projeto parte da seguinte dor encontrada por Guilherme, ao procurar novas marcas de roupa foi encontrado as seguintes barreiras:
 
@@ -52,7 +52,7 @@ Essas são algumas das tecnologias que possuem chance de serem utilizadas no pro
 - ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 - ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-## Stakeholders
+## :handshake: Stakeholders
 
 <ul>
 <li>Mentor - Eduardo Mangeli</li>
@@ -77,7 +77,7 @@ Segue o link para visualização completa do modelo de Propostas de Valor (VPC) 
 
 <a href="https://miro.com/app/board/uXjVNk9OfuE=/">Propostas de valor</a>
 
-## Roadmap inicial (Atualizado 29/04)
+## :calendar: Roadmap inicial (Atualizado 29/04)
 
 - [x] Fazer protótipo
 - [x] Fazer documentação
@@ -85,7 +85,7 @@ Segue o link para visualização completa do modelo de Propostas de Valor (VPC) 
 - [ ] Criar banco de dados
   - [ ] Fazer conexão com o Firebase DB
 
-## Status do projeto (Atualizado 29/04)
+## :round_pushpin: Status do projeto (Atualizado 29/04)
 
 No momento está sendo desenvolvida a API, para intergrar com o banco de dados que será criado posteriormente.
 
@@ -140,7 +140,7 @@ Segue o link para visualização completa da Matriz de Feedback e Visão do prod
 <li><strong> Responsividade: </strong> O layout do site deve se adaptar a diferentes dispositivos, como desktops, tablets e smartphones.</li>
 </ul>
 
-## Protótipo
+##  Protótipo
 
 Durante o processo de ideação, foi desenvolvido um protótipo básico para entendermos os seguintes tópicos:
 
