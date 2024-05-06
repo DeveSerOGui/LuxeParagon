@@ -56,4 +56,12 @@ public class Endereco {
     public void setComplemento(Integer complemento) {
         Complemento = complemento;
     }
+
+    public Comprador getComprador() {
+        return Comprador;
+    }
+
+    public void setComprador(Comprador comprador) {
+        Comprador = comprador;
+    }
 }
