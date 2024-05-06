@@ -2,7 +2,7 @@ package br.com.luxe.paragon.demoapi.model;
 
 public class Comprador {
 
-    private Integer id;
+    private Integer idUsuario;
     private String nome;
     private  String cpf;
     private String email;
@@ -16,11 +16,11 @@ public class Comprador {
     }
 
     public Integer getId() {
-        return id;
+        return idUsuario;
     }
 
     public void setId(Integer id) {
-        this.id = id;
+        this.idUsuario = id;
     }
 
     public String getNome() {

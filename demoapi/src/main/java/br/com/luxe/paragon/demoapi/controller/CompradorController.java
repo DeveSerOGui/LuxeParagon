@@ -43,11 +43,11 @@ class CompradorController {
     }
 
     @GetMapping("{id}")
-    public ResponseEntity<Comprador> getById(@PathVariable("id") Integer id) {
+    public ResponseEntity<Comprador> getById(@PathVariable("id") Integer idUsuario) {
         Comprador result = null;
 
         for (Comprador item : Compradores) {
-            if (item.getId() == id) {
+            if (item.getId() == idUsuario) {
                 result = item;
                 break;
             }
@@ -61,12 +61,12 @@ class CompradorController {
     }
 
     @PutMapping("{id}")
-    public ResponseEntity<Comprador> update(@PathVariable("id") Integer id, @RequestBody Comprador CompradorNovosDados) {
+    public ResponseEntity<Comprador> update(@PathVariable("id") Integer idUsuario, @RequestBody Comprador CompradorNovosDados) {
 
         Comprador compradorAtualizar = null;
 
         for (Comprador item : Compradores) {
-            if (item.getId() == id) {
+            if (item.getId() == idUsuario) {
                 compradorAtualizar = item;
                 break;
             }
@@ -84,12 +84,12 @@ class CompradorController {
     }
 
     @DeleteMapping("{id}")
-    public ResponseEntity<HttpStatus> delete(@PathVariable("id") Integer id) {
+    public ResponseEntity<HttpStatus> delete(@PathVariable("id") Integer idUsuario) {
         try {
             Comprador compradorExcluir = null;
 
             for (Comprador item : Compradores) {
-                if (item.getId() == id) {
+                if (item.getId() == idUsuario) {
                     compradorExcluir = item;
                     break;
                 }
