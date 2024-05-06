@@ -1,22 +1,27 @@
 package br.com.luxe.paragon.demoapi.model;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 
 import java.util.List;
 
+@Entity
+@Table (name = "compradores")
 public class Comprador {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idComprador;
+
+    @Column(nullable = false)
+    private String nome;
+    @Column(nullable = true)
+    private  String cpf;
+    @Column(nullable = false)
+    private String email;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
     @JoinColumn(name = "comprador_id")
     private List<Endereco> enderecos;
-    private String nome;
-    private  String cpf;
-    private String email;
 
     public String getEmail() {
         return email;
