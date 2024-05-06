@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Optional;
 
 import br.com.luxe.paragon.demoapi.model.Comprador;
+import br.com.luxe.paragon.demoapi.repository.CompradorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,12 +22,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/comprador")
 class CompradorController {
 
+    @Autowired
+    private CompradorRepository compradorRepository;
+
     private static ArrayList<Comprador> Compradores = new ArrayList<>();
+
 
     @GetMapping
     public ResponseEntity<List<Comprador>> getAll() {
         try {
-            return new ResponseEntity<>(Compradores, HttpStatus.OK);
+            return new ResponseEntity<>(this.compradorRepository.findAll(), HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -35,71 +40,53 @@ class CompradorController {
     @PostMapping
     public ResponseEntity<Comprador> create(@RequestBody Comprador item) {
         try {
-            Compradores.add(item);
-            return new ResponseEntity<>(item, HttpStatus.CREATED);
+            Comprador result = this.compradorRepository.save(item);
+            return new ResponseEntity<>(result, HttpStatus.CREATED);
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.EXPECTATION_FAILED);
         }
     }
 
     @GetMapping("{id}")
-    public ResponseEntity<Comprador> getById(@PathVariable("id") Integer idComprador) {
-        Comprador result = null;
+    public ResponseEntity<Comprador> getById(@PathVariable("id") long idComprador) {
+        Optional <Comprador> result = this.compradorRepository.findById(idComprador);
 
-        for (Comprador item : Compradores) {
-            if (item.getId() == idComprador) {
-                result = item;
-                break;
-            }
-        }
-
-        if (result != null) {
-            return new ResponseEntity<>(result, HttpStatus.OK);
+        if (result.isPresent()) {
+            return new ResponseEntity<>(result.get(), HttpStatus.OK);
         } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
 
     @PutMapping("{id}")
-    public ResponseEntity<Comprador> update(@PathVariable("id") Integer idComprador, @RequestBody Comprador CompradorNovosDados) {
+    public ResponseEntity<Comprador> update(@PathVariable("id") long idComprador, @RequestBody Comprador CompradorNovosDados) {
 
-        Comprador compradorAtualizar = null;
+        Optional <Comprador> result = this.compradorRepository.findById(idComprador);
 
-        for (Comprador item : Compradores) {
-            if (item.getId() == idComprador) {
-                compradorAtualizar = item;
-                break;
-            }
-        }
-
-        if (compradorAtualizar == null) {
+        if (result.isPresent() == false) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
+        Comprador compradorAtualizar = result.get();
         compradorAtualizar.setNome(CompradorNovosDados.getNome());
         compradorAtualizar.setCpf(CompradorNovosDados.getCpf());
         compradorAtualizar.setEmail(CompradorNovosDados.getEmail());
 
+        this.compradorRepository.save(compradorAtualizar);
         return new ResponseEntity<>(compradorAtualizar, HttpStatus.OK);
     }
 
     @DeleteMapping("{id}")
-    public ResponseEntity<HttpStatus> delete(@PathVariable("id") Integer idComprador) {
+    public ResponseEntity<HttpStatus> delete(@PathVariable("id") long idComprador) {
         try {
-            Comprador compradorExcluir = null;
+            Optional <Comprador> compradorExcluir = this.compradorRepository.findById(idComprador);
 
-            for (Comprador item : Compradores) {
-                if (item.getId() == idComprador) {
-                    compradorExcluir = item;
-                    break;
-                }
-            }
-
-            if (compradorExcluir == null){
+            if (compradorExcluir.isPresent() == false){
                 return new ResponseEntity<>(HttpStatus.NOT_FOUND);
             }
 
-            Compradores.remove(compradorExcluir);
+            this.compradorRepository.delete(compradorExcluir.get());
+
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.EXPECTATION_FAILED);
