@@ -1,5 +1,8 @@
 package br.com.luxe.paragon.demoapi.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.ManyToOne;
+
 public class Endereco {
     private Integer id;
     private String rua;
@@ -9,6 +12,10 @@ public class Endereco {
     private String Cep;
 
     private Integer Complemento;
+
+    @ManyToOne
+    @JsonIgnore
+    private Comprador Comprador;
 
     public Integer getId() {
         return id;

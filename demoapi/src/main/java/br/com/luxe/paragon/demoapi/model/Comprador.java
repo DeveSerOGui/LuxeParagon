@@ -1,8 +1,19 @@
 package br.com.luxe.paragon.demoapi.model;
 
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
+
+import java.util.List;
+
 public class Comprador {
 
     private Integer idUsuario;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
+    @JoinColumn(name = "comprador_id")
+    private List<Endereco> enderecos;
     private String nome;
     private  String cpf;
     private String email;
