@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Comprador {
 
-    private Integer idUsuario;
+    private Integer idComprador;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
     @JoinColumn(name = "comprador_id")
@@ -27,11 +27,11 @@ public class Comprador {
     }
 
     public Integer getId() {
-        return idUsuario;
+        return idComprador;
     }
 
     public void setId(Integer id) {
-        this.idUsuario = id;
+        this.idComprador = id;
     }
 
     public String getNome() {
