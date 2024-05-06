@@ -10,7 +10,7 @@ public class Comprador {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idComprador;
+    private long idComprador;
 
     @Column(nullable = false)
     private String nome;
@@ -31,11 +31,11 @@ public class Comprador {
         this.email = email;
     }
 
-    public Integer getId() {
+    public long getId() {
         return idComprador;
     }
 
-    public void setId(Integer id) {
+    public void setId(long id) {
         this.idComprador = id;
     }
 
