@@ -19,9 +19,9 @@ public class Comprador {
     @Column(nullable = false)
     private String email;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
-    @JoinColumn(name = "comprador_id")
-    private List<Endereco> enderecos;
+    //@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
+    //@JoinColumn(name = "comprador_id")
+    //private List<Endereco> enderecos;
 
     public String getEmail() {
         return email;
