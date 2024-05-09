@@ -1,22 +1,24 @@
 package br.com.luxe.paragon.demoapi.model;
 
-import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
-@Entity
-@Table (name = "compradores")
+@Document (collection = "Comprador")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Comprador {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idComprador;
+    private long id;
 
-    @Column(nullable = false)
     private String nome;
-    @Column(nullable = true)
     private  String cpf;
-    @Column(nullable = false)
     private String email;
 
     //@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
@@ -32,11 +34,11 @@ public class Comprador {
     }
 
     public long getId() {
-        return idComprador;
+        return id;
     }
 
     public void setId(long id) {
-        this.idComprador = id;
+        this.id = id;
     }
 
     public String getNome() {
