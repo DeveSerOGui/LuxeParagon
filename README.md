@@ -3,7 +3,7 @@
   <h3 align="center">LuxeParagon</h3>
 
   <p align="center">
-    DOCUMENTAÇÃO E RELATÓRIOS DO PROJETO
+    DOCUMENTAÇÃO E RELATÓRIOS
 </div>
 
 <!-- TABLE OF CONTENTS -->
