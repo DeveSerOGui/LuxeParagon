@@ -1,9 +1,9 @@
 package br.com.luxe.paragon.demoapi.controller;
 
 
+import br.com.luxe.paragon.demoapi.model.UsuarioModel;
 import br.com.luxe.paragon.demoapi.repository.UsuarioRepository;
 import br.com.luxe.paragon.demoapi.request.UsuarioRequest;
-import luxeparagon.apimongo.model.UsuarioModel;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,4 +1,4 @@
-package luxeparagon.apimongo.model;
+package br.com.luxe.paragon.demoapi.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
