@@ -3,6 +3,9 @@ package br.com.luxe.paragon.demoapi.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Document("Usuarios")
 public class UsuarioModel {
 
@@ -15,10 +18,13 @@ public class UsuarioModel {
 
     private String senha;
 
-    public UsuarioModel(String nome, String email, String senha) {
+    private List<Endereco> enderecos = new ArrayList<Endereco>();
+
+    public UsuarioModel(String nome, String id, String email, Endereco endereco, String senha) {
         this.nome = nome;
         this.email = email;
         this.senha = senha;
+        this.enderecos = enderecos;
     }
 
     public UsuarioModel() {
@@ -54,5 +60,13 @@ public class UsuarioModel {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public List<Endereco> getEnderecos() {
+        return enderecos;
+    }
+
+    public void setEnderecos(List<Endereco> enderecos) {
+        this.enderecos = enderecos;
     }
 }

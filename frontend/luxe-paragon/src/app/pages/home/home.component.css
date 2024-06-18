@@ -1,0 +1,7 @@
+@media screen and (orientation: landscape) {
+  .carousel img {
+    height: 80vh;
+    object-fit: cover;
+    filter: brightness(70%)
+  }
+}

@@ -1,0 +1,49 @@
+<!-- Section: Design Block -->
+<section class="">
+  <!-- Jumbotron -->
+  <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+    <div class="container">
+      <div class="row gx-lg-5 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <h1 class="my-5 display-3 fw-bold ls-tight">
+            Luxe Paragon <br />
+            <span class="text-primary">As melhores ofertas</span>
+          </h1>
+          <p style="color: hsl(217, 10%, 50.8%)">
+            O melhor site de moda do Brasil! Crie sua conta e fique por dentro das últimas atualizações.
+          </p>
+        </div>
+
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="card">
+            <div class="card-body py-5 px-md-5">
+
+              <form>
+                <div class="form-group">
+                  <label > Nome</label>
+                  <input type="text"  [(ngModel)]="nome" class="form-control" id="usuarionome" name="usuarionome" placeholder="Digite o seu nome">
+                </div>
+
+                <div class="form-group">
+                    <label >Email</label>
+                    <input type="email" [(ngModel)]="email" class="form-control" id="usuarioemail" name="usuarioemail" placeholder="Digite o seu email">
+                  </div>
+
+                  <div class="form-group">
+                    <label >Senha</label>
+                    <input type="password" [(ngModel)]="senha" class="form-control" id="usuariosenha" name="usuariosenha" placeholder="Digite sua senha">
+                  </div>
+
+                  <div mat-dialog-actions>
+                  <button  type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4" (click)="register();" >
+                    Criar conta
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

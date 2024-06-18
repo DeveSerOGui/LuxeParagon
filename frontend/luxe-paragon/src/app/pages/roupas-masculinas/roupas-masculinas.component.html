@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let item of ProdutosArray">
+      <div class="card col-md-3">
+          <h5 style="white-space: nowrap;overflow: hidden; text-overflow:  ellipsis; max-width: 100ch;">{{item.nome}}</h5>
+          <p>R${{item.preco}}</p>
+          <p>{{item.marca}}</p>
+          <p></p>
+          <button class="btn btn-primary btn-success">Adicionar ao carrinho</button>
+      </div>
+    </ng-container>
+  </div>
+</div>

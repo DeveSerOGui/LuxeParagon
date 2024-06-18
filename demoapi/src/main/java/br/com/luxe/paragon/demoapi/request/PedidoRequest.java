@@ -1,10 +1,9 @@
 package br.com.luxe.paragon.demoapi.request;
-
-import br.com.luxe.paragon.demoapi.model.Endereco;
+import br.com.luxe.paragon.demoapi.model.Produto;
 
 import java.util.List;
 
-public class UsuarioRequest {
+public class PedidoRequest {
 
     private String nome;
 
@@ -12,16 +11,16 @@ public class UsuarioRequest {
 
     private String senha;
 
-    private List<Endereco> enderecos;
+    private List<Produto> produtos;
 
-    public UsuarioRequest() {
-    }
-
-    public UsuarioRequest(String nome, String email, Endereco endereco, String senha) {
+    public PedidoRequest(String nome, String email, String senha, List<Produto> produtos) {
         this.nome = nome;
         this.email = email;
         this.senha = senha;
-        this.enderecos = enderecos;
+        this.produtos = produtos;
+    }
+
+    public PedidoRequest() {
     }
 
     public String getNome() {
@@ -48,11 +47,11 @@ public class UsuarioRequest {
         this.senha = senha;
     }
 
-    public List<Endereco> getEnderecos() {
-        return enderecos;
+    public List<Produto> getProdutos() {
+        return produtos;
     }
 
-    public void setEnderecos(List<Endereco> enderecos) {
-        this.enderecos = enderecos;
+    public void setProdutos(List<Produto> produtos) {
+        this.produtos = produtos;
     }
 }
