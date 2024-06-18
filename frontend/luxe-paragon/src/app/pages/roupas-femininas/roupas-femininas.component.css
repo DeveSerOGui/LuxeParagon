@@ -1,9 +1,19 @@
-.card{
-  padding: 20px;
-  margin: 50px;
+.list-group-numbered {
+  list-style-type: none;
+  counter-reset: section;
+}
+.list-group-numbered > .list-group-item::before {
+  content: counters(section, ".") ". ";
+  counter-increment: section;
 }
 
-.item{
-  margin: 0px 15px;
-  text-align: center;
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
 }

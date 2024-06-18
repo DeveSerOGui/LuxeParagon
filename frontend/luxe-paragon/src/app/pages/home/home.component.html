@@ -6,19 +6,19 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/06/prada8.jpg?w=732&h=412&crop=1" class="d-block w-100" alt="...">
+      <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/06/prada8.jpg?w=732&h=412&crop=1" id="imgnews" class="d-block w-100" alt="..." routerLink="/noticia-prada">
       <div class="carousel-caption d-none d-md-block">
         <h1>Prada “brinca” com ilusão de ótica durante desfile em Milão</h1>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/06/bruna-marquezine_0c2be1.jpg?w=1220&h=674&crop=1" class="d-block w-100" alt="...">
+      <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/06/bruna-marquezine_0c2be1.jpg?w=1220&h=674&crop=1" id="imgnews" class="d-block w-100" alt="..." routerLink="/noticia-bruna">
       <div class="carousel-caption d-none d-md-block">
         <h1>Bruna Marquezine relembra perrengues com look do Met Gala: “Me cortava”</h1>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="https://mundonegro.inf.br/wp-content/uploads/2022/03/http___cdn.cnn_.com_cnnnext_dam_assets_220316083500-01-ralph-lauren-hbcu.jpg" class="d-block w-100" alt="...">
+      <img src="https://mundonegro.inf.br/wp-content/uploads/2022/03/http___cdn.cnn_.com_cnnnext_dam_assets_220316083500-01-ralph-lauren-hbcu.jpg" id="imgnews" class="d-block w-100" alt="..."routerLink="/noticia-ralph">
       <div class="carousel-caption d-none d-md-block">
         <h1>Nova coleção da Ralph Lauren homenageia faculdades historicamente negras</h1>
       </div>
@@ -32,4 +32,31 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+
+   <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5" *ngFor="let item of ProdutosArray"  >
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">{{item.nome}}</h5>
+                                    <!-- Product price-->
+                                    R${{item.preco}}<br>
+                                    {{item.marca}}
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Adicionar ao carrinho</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 </div>

@@ -6,6 +6,9 @@ import { NoticiasComponent } from './pages/noticias/noticias.component';
 import { RoupasMasculinasComponent } from './pages/roupas-masculinas/roupas-masculinas.component';
 import { CriarContaComponent } from './pages/criar-conta/criar-conta.component';
 import { RoupasFemininasComponent } from './pages/roupas-femininas/roupas-femininas.component';
+import { NoticiaPradaComponent } from './pages/allnews/noticia-prada/noticia-prada.component';
+import { NoticiaBrunaComponent } from './pages/allnews/noticia-bruna/noticia-bruna.component';
+import { NoticiaRalphlaurenComponent } from './pages/allnews/noticia-ralphlauren/noticia-ralphlauren.component';
 
 export const routes: Routes = [
   { path: "", component: HomeComponent},
@@ -15,6 +18,10 @@ export const routes: Routes = [
   { path: "roupash", component: RoupasMasculinasComponent},
   { path: "roupasf", component: RoupasFemininasComponent},
   { path: "signup", component: CriarContaComponent},
+  { path: "noticia-prada", component: NoticiaPradaComponent},
+  { path: "noticia-bruna", component: NoticiaBrunaComponent},
+  { path: "noticia-ralph", component: NoticiaRalphlaurenComponent},
+
 ];
 
 @NgModule({
